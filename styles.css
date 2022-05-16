@@ -1,0 +1,288 @@
+/*vars*/
+*{
+    --principal: pink;
+    --negro: #000;
+    --blanco: #fff;
+}
+
+
+/*First image*/ 
+.containerPhotoPresentation{    
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 4em;
+}
+
+@media screen and (min-width: 600px){
+    .containerPhotoPresentation{            
+        padding-bottom: 2em;
+    }   
+}
+
+.containerPhotoPresentation__background{    
+    height: 100%;
+    width: 100%;
+    object-fit: cover;        
+    position: absolute;    
+    z-index: -1;
+}
+.containerPhotoText{
+    display: flex;    
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: end;
+    flex-direction: column;    
+}
+
+.containerPhotoPresentation__name{    
+    color: var(--principal); 
+    font-size: 6em;
+    margin-bottom: -0.2em;
+}
+.containerPhotoPresentation__xv{    
+    color: var(--blanco);
+    font-size: 2em;
+}
+
+/*Invitation*/
+
+.title{
+    background: var(--principal);
+    width: 100%;
+    display: flex;
+    justify-content: center;    
+    position: absolute;    
+    z-index: 1;
+    top: 0;
+}
+
+.title__text{    
+    color: var(--negro);
+    font-size: 2em;
+    text-align: center;
+}
+
+/*Message*/
+
+.containerMensaje{
+    background: var(--principal);
+    margin: 2em;
+    padding: 3em 2em;
+    border-radius: 2em;
+    margin-top: -2em;
+}
+
+.containerMensaje__text{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+@media screen and (min-width: 600px){
+    .containerMensaje__text{        
+        font-size: 2em;
+    }
+    .containerMensaje{        
+        padding: 2em;    
+        margin-top: 1em;
+    }
+}
+
+/*Parents*/
+.containerParents{
+    display: flex;
+    align-items: center;
+    flex-direction: column;    
+}
+
+.containerParents__parents{
+    font-size: 2em;
+    color: var(--principal);
+    margin-bottom: 1em;
+}
+
+.containerParents__mother{
+    font-size: 2em;
+    color: var(--negro);    
+}
+
+.containerParents__legend{
+    margin: 1em 0;
+    font-style: italic;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.containerParents__name{
+    font-size: 9em;
+    color: var(--principal);
+    margin: 0;
+}
+
+.containerParents__party{
+    font-size: 3em;    
+}
+
+/*timer*/
+.containerTimer{
+    margin-top: 2em;
+    display: flex;
+    width: 100%;
+    height: 90vh;    
+    flex-direction: column;
+    align-items: center;    
+}
+
+.containerTimer__title{
+    font-size: 2em;
+    background:var(--principal);
+    width: 100%;
+    text-align: center;
+    padding: 0.2em;
+    color: var(--blanco);
+}
+
+.containerTimer__background{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerTimer__number{
+    width: 80%;    
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 4em;
+}
+.containerTimer__number-days-number{
+    color: var(--principal);
+    font-size: 2em;
+    text-align: center;
+}
+
+.containerTimer__number-days-date{
+    color: var(--principal);
+    font-size: 1em;
+    margin-top: 2em;
+}
+@media screen and (min-width: 600px){
+    .containerTimer__number-days-number{        
+        font-size: 4em;        
+    }
+    
+    .containerTimer__number-days-date{        
+        font-size: 3em;        
+    }   
+    .containerTimer__number{        
+        padding-bottom: 2em;
+    }
+}
+
+/*When and where*/
+.containerWhereWhen{
+    background: var(--principal);
+    text-align: center;
+    font-size: 1.5em;
+    padding: 1em;
+    color: var(--blanco);
+}
+.containerChurch__containerImage{
+    height: 50vh;
+    margin-bottom: 1em;
+}
+
+.containerChurch__containerImage-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;    
+}
+
+.containerChurch__containerText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.containerChurch__containerText_name{
+    font-size: 2.5em;
+    color: var(--principal);
+    text-align: center;
+}
+.containerSalon__containerText_name{
+    font-size: 2.5em;
+    color: var(--principal);
+    margin-bottom: 2em;
+    text-align: center;
+}
+.containerChurch__containerText_misa{
+    font-size: 2.5em;
+    color: var(--negro);
+    margin-bottom: 1em;
+}
+.containerChurch__containerText_addres{
+    font-size: 1.5em;
+    color: gray;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+.containerChurch__containerText_map{
+    background: darkorchid;
+    padding: 1em 2em;
+    border-radius: 0.5em;
+    margin-bottom: 3em;
+    color: var(--blanco);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+/*album*/
+.containerAlbum__title{
+    background:var(--principal);
+    font-size: 3em;
+    padding: 0.2em;
+    text-align: center;
+}
+.containerAlbum{
+    display: flex;
+    width: 100%;
+    height: 180vh;
+    padding: 1em 2em;
+    flex-wrap: wrap;
+    border: 0.4em solid var(--blanco);
+}
+.containerAlbum__img{
+    width: 40%;    
+    margin: 0.5em;
+    flex-grow: 1;
+    min-width: 200px;
+    object-fit: cover;
+}
+.container{
+    width: 100%;
+    height: 185vh;
+    background: var(--principal);
+    padding: 0.5em 0.5em;
+}
+
+@media  screen and (min-width:600px) {
+    .container{
+        padding: 0.5em 7em;
+    }
+}
+/*footer*/
+
+.containerFooter__name{
+    background: var(--principal);
+    color: var(--blanco);
+    font-size: 3em;
+    width: 100%;
+    text-align: center;    
+}
+
+.containerFooter__name:first-child{
+    margin-top: 0.5em;
+}
