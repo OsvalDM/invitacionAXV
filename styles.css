@@ -3,9 +3,16 @@
     --principal: pink;
     --negro: #000;
     --blanco: #fff;
+
+    font-family: 'Panipuri';
 }
 
-
+@font-face {
+   font-family: 'Panipuri';
+   src: url('gri.otf') format("truetype");
+   font-weight: normal;
+   font-style: normal;
+}
 /*First image*/ 
 .containerPhotoPresentation{    
     width: 100%;
@@ -285,4 +292,95 @@
 
 .containerFooter__name:first-child{
     margin-top: 0.5em;
+}
+
+/*animations*/
+.slide-in-bottom1 {
+	animation: slide-in-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;    
+}
+.slide-in-bottom2 {
+	animation: slide-in-bottom 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;    
+}
+.slide-in-bottom3 {
+	animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
+}
+@keyframes slide-in-bottom {
+    0% {
+        transform: translateY(1000px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-1000px) ;
+        opacity: 0.5;
+    }
+}
+  
+.festejo{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;        
+    position: absolute;
+    top: 0;    
+    z-index: 100;
+}
+
+.mariposa:nth-child(1){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.mariposa:nth-child(2){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+}
+.mariposa:nth-child(3){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+.mariposa:nth-child(4){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+.mariposa:nth-child(5){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+}
+.mariposa:nth-child(6){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+.mariposa:nth-child(7){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 60%;
+}
+.mariposa:nth-child(8){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 70%;
+}
+.mariposa:nth-child(9){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 80%;
+}
+.mariposa:nth-child(10){
+    height: 12%;    
+    position: absolute;
+    bottom: 0;
+    left: 90%;
 }
