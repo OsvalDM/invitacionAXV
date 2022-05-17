@@ -384,3 +384,7 @@
     bottom: 0;
     left: 90%;
 }
+audio{
+    position: absolute;
+    opacity: 0;
+}
