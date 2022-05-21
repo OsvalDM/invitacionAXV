@@ -14,7 +14,8 @@
 <body>        
     <header>
         <div class="containerPhotoPresentation">
-            <img class="containerPhotoPresentation__background" src="./img/n7.jpg" alt="Photo Main">                                
+            <img class="containerPhotoPresentation__background movimiennto"id="bg" src="./img/n7.jpg" alt="Photo Main">
+            <div class="maskBG"></div>
             <div class="festejo">
                 <img src="./img/butterfly.png" class="mariposa slide-in-bottom1">
                 <img src="./img/butterfly.png" class="mariposa slide-in-bottom3">
@@ -34,12 +35,12 @@
         </div>            
     </header>
     <article>
-        <audio controls="" autoplay="" src="musica.mp3" preload="auto" id="audio"></audio>
+        <audio src="musica.mp3" preload="auto" id="audio"></audio>
         <div class="title">
             <h3 class="title__text">Estas invitado a la fiesta de Mis XV años</h3>
         </div>        
         <div class="containerMensaje">
-            <P class="containerMensaje__text">Son mis quince años una ilusión sin igual. Los más lindos momentos nunca los voy a olvidar, con mis familiares y amigos en esta noche tan especial.</P>
+            <P class="containerMensaje__text">Dejo atrás un mundo y entro a uno nuevo aunque a veces dudo, estoy llena de esperanzas y sueños. Creo que estoy construyendo mi propio camino siento alegría y quiero compartirlo con todos los que quiero.</P>
         </div>        
         <div class="containerParents">            
             <h3 class="containerParents__parents">Mis padres</h3>
@@ -87,8 +88,8 @@
                 <div class="containerChurch__containerText">
                     <h2 class="containerChurch__containerText_name">Iglesia de Santiago Apostol</h2>
                     <h3 class="containerChurch__containerText_misa">Misa</h3>
-                    <p class="containerChurch__containerText_addres"><b>Hora:</b> 3:30 p.m.</p>
-                    <p class="containerChurch__containerText_addres">Centro de Tepeyahualco</p>                    
+                    <p class="containerChurch__containerText_addres"><b>Hora:</b> 03:30 p.m.</p>
+                    <p class="containerChurch__containerText_addres"><b>Direccion:</b><br><br>Iglesia Santiago Apostol<br>Santiago Tepeyahualco<br>Zempoala, Hgo.</p>
                     <a class="containerChurch__containerText_map" href="https://goo.gl/maps/NfnvKqCeaEoQWaFJ8" target="_blank">Ver mapa</a>
                 </div>                
             </div>
@@ -100,6 +101,7 @@
                 <div class="containerChurch__containerText">
                     <h2 class="containerChurch__containerText_name">Quinta los Arcos</h2>
                     <h3 class="containerSalon__containerText_name">Salon</h3>
+                    <p class="containerChurch__containerText_addres"><b>Hora:</b> 05:00 p.m.</p>
                     <p class="containerChurch__containerText_addres"><b>Direccion:</b><br><br>Calle Tikal<br>Santiago Tepeyahualco<br>Zempoala, Hgo.</p>
                     <a class="containerChurch__containerText_map" href="https://goo.gl/maps/sqpkGwbp8MEaNjAn7">Ver mapa</a>
                 </div>
@@ -109,15 +111,28 @@
         <h2 class="containerAlbum__title">Ale</h2>
         <div class="container">
             <div class="containerAlbum">                        
-                <img class="containerAlbum__img" src="./img/n1.jpg" alt="">
-                <img class="containerAlbum__img" src="./img/n10.jpg" alt="">
+                <img class="containerAlbum__img" src="./img/n7.jpg" alt="">
                 <img class="containerAlbum__img" src="./img/n8.jpg" alt="">
-                <img class="containerAlbum__img" src="./img/n4.jpg" alt="">
                 <img class="containerAlbum__img" src="./img/n5.jpg" alt="">
-                <img class="containerAlbum__img" src="./img/n7.jpg" alt="">            
-            </div>
+                <img class="containerAlbum__img" src="./img/n6.jpg" alt="">
+                <img class="containerAlbum__img" src="./img/n9.jpg" alt="">
+                <img class="containerAlbum__img" src="./img/n10.jpg" alt="">            
+            </div>  
         </div>
-                
+        
+        <section>
+            <div class="containerConfirmation">
+                <div class="containerConfirmation__containerImg">
+                    <img src="./img/n1.jpg" class="containerConfirmation__containerImg-img">
+                    <h1 class="containerPhotoPresentation__name c">Ale</h1>
+                    <h3 class="containerConfirmation__containerImg-txt">MIS XV AÑOS</h3>
+                    <h3 class="containerConfirmation__containerImg-txt">Confirma tu asistencia !!</h3>
+                    <img src="./img/animacion.gif" class="containerConfirmation__containerImg-img g">
+                </div>
+                <iframe src="https://calendly.com/invitacionxvale/mis-xv-anos-ale-1?month=2022-07" frameborder="0" class="containerConfirmation__iframe"></iframe>
+            </div>
+            
+        </section>
     </article>
     
     <footer>
@@ -125,7 +140,7 @@
             <h3 class="containerFooter__name">Ale</h3>
             <h3 class="containerFooter__name">Mis XV Años</h3>
         </div>
-    </footer>
+    </footer>    
     <script src="scripts.js"></script>    
 </body>
 </html>

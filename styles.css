@@ -1,10 +1,14 @@
 /*vars*/
 *{
-    --principal: pink;
+    --principal: #ffc0cb;
     --negro: #000;
     --blanco: #fff;
 
-    font-family: 'Panipuri';
+    font-family: 'Panipuri';    
+}
+
+body{
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -13,6 +17,7 @@
    font-weight: normal;
    font-style: normal;
 }
+
 /*First image*/ 
 .containerPhotoPresentation{    
     width: 100%;
@@ -26,13 +31,24 @@
     }   
 }
 
+.maskBG{
+    height: 30%;
+    width: 100%;
+    background: var(--blanco);
+    position: absolute;    
+    z-index: -1;
+    bottom: -12em;
+}
+
 .containerPhotoPresentation__background{    
     height: 100%;
     width: 100%;
-    object-fit: cover;        
+    object-fit: cover;
+    object-position: center;
     position: absolute;    
-    z-index: -1;
+    z-index: -2;     
 }
+
 .containerPhotoText{
     display: flex;    
     width: 100%;
@@ -47,13 +63,13 @@
     font-size: 6em;
     margin-bottom: -0.2em;
 }
+
 .containerPhotoPresentation__xv{    
     color: var(--blanco);
     font-size: 2em;
 }
 
 /*Invitation*/
-
 .title{
     background: var(--principal);
     width: 100%;
@@ -71,7 +87,6 @@
 }
 
 /*Message*/
-
 .containerMensaje{
     background: var(--principal);
     margin: 2em;
@@ -165,6 +180,7 @@
     align-items: flex-end;
     padding-bottom: 4em;
 }
+
 .containerTimer__number-days-number{
     color: var(--principal);
     font-size: 2em;
@@ -176,6 +192,7 @@
     font-size: 1em;
     margin-top: 2em;
 }
+
 @media screen and (min-width: 600px){
     .containerTimer__number-days-number{        
         font-size: 4em;        
@@ -197,6 +214,7 @@
     padding: 1em;
     color: var(--blanco);
 }
+
 .containerChurch__containerImage{
     height: 50vh;
     margin-bottom: 1em;
@@ -214,28 +232,33 @@
     flex-direction: column;
     align-items: center;
 }
+
 .containerChurch__containerText_name{
     font-size: 2.5em;
     color: var(--principal);
     text-align: center;
 }
+
 .containerSalon__containerText_name{
     font-size: 2.5em;
     color: var(--principal);
     margin-bottom: 2em;
     text-align: center;
 }
+
 .containerChurch__containerText_misa{
     font-size: 2.5em;
     color: var(--negro);
     margin-bottom: 1em;
 }
+
 .containerChurch__containerText_addres{
     font-size: 1.5em;
     color: gray;
     margin-bottom: 1.5em;
     text-align: center;
 }
+
 .containerChurch__containerText_map{
     background: darkorchid;
     padding: 1em 2em;
@@ -253,6 +276,7 @@
     padding: 0.2em;
     text-align: center;
 }
+
 .containerAlbum{
     display: flex;
     width: 100%;
@@ -261,6 +285,7 @@
     flex-wrap: wrap;
     border: 0.4em solid var(--blanco);
 }
+
 .containerAlbum__img{
     width: 40%;    
     margin: 0.5em;
@@ -268,6 +293,7 @@
     min-width: 200px;
     object-fit: cover;
 }
+
 .container{
     width: 100%;
     height: 185vh;
@@ -298,12 +324,15 @@
 .slide-in-bottom1 {
 	animation: slide-in-bottom 4s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;    
 }
+
 .slide-in-bottom2 {
 	animation: slide-in-bottom 3.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;    
 }
+
 .slide-in-bottom3 {
 	animation: slide-in-bottom 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) forwards;
 }
+
 @keyframes slide-in-bottom {
     0% {
         transform: translateY(1000px);
@@ -330,61 +359,159 @@
     bottom: 0;
     left: 0;
 }
+
 .mariposa:nth-child(2){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 10%;
 }
+
 .mariposa:nth-child(3){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 20%;
 }
+
 .mariposa:nth-child(4){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 30%;
 }
+
 .mariposa:nth-child(5){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 40%;
 }
+
 .mariposa:nth-child(6){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 50%;
 }
+
 .mariposa:nth-child(7){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 60%;
 }
+
 .mariposa:nth-child(8){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 70%;
 }
+
 .mariposa:nth-child(9){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 80%;
 }
+
 .mariposa:nth-child(10){
     height: 12%;    
     position: absolute;
     bottom: 0;
     left: 90%;
 }
+
 audio{
     position: absolute;
     opacity: 0;
+}
+
+/*confirmacion*/
+.containerConfirmation{
+    display: block;    
+    width: 100%;    
+}
+
+@media  screen and (min-width:600px) {
+    .containerConfirmation{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 162vh;
+    }
+}
+
+.containerConfirmation__containerImg{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.containerConfirmation__iframe{
+    display: block;
+    width: 100%;
+    height: 120vh;  
+}
+
+.containerConfirmation__containerImg-img{
+    width: 90%;
+    padding: 1em;    
+}
+
+.containerConfirmation__containerImg-txt{
+    font-size: 2em;    
+}
+
+@media  screen and (min-width:600px) {
+    .containerConfirmation__containerImg{
+        width: 40%;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .containerConfirmation__iframe{
+        flex-grow: 2;
+        width: 60%;
+    }
+    
+    .containerConfirmation__containerImg-img{
+        width: 90%;
+        padding: 1em;
+        margin-top: 3em;
+    }
+    .containerConfirmation__containerImg-txt{
+        font-size: 3em;        
+    }
+}
+
+.c{
+    font-size: 6em;
+    margin-top: 0;
+}
+
+.g{
+    margin-top: 0;
+    width: 50%;
+}
+
+/*animaciones principal inicio*/
+.movimiennto {
+	animation: kenburns-top 10s linear infinite alternate-reverse;
+}
+
+@keyframes kenburns-top {
+    0% {
+        transform: scale(1) translateY(0);
+        transform-origin: 50% 16%;
+      }
+      100% {
+        transform: scale(1.25) translateY(-15px);
+        transform-origin: top;
+      }
 }
