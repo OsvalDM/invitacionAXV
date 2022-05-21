@@ -70,12 +70,12 @@ function changeSource(){
         n = parseInt(Math.random() * 4 + 1);
     }while(n==numeroAnterior);
     numeroAnterior = n;
-    image.src="./img/n"+n+".jpg";
-    console.log("./img/n"+n+".jpg");
+    image.src="./img/n"+n+".jpg";    
 }
 
 setInterval(changeSource, MILLISECONDS_OF_A_SECOND*10);
 
 //audio
 let audioEtiqueta = document.querySelector("audio")
+audioEtiqueta.src ="musica/musica.mp3";
 audioEtiqueta.play();
